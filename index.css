@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(36, 0, 87);
+    background: radial-gradient(circle, rgba(36, 0, 87, 1) 0%, rgba(9, 9, 121, 1) 38%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+
+.Cal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    height: 100vh;
+}
+
+/* .Cal-container div{
+    margin: 0px;
+} */
+
+.Cal-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cal-input {
+    padding: 5px;
+    font-size: 24px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(113,34,223,.79);
+    text-shadow: 0px 0px 2px rgba(51, 7, 102, 0.75);
+}
+
+.Cal-input:focus {
+    outline:none;
+}
+
+.Cal-display h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.Cal-button {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px 14px;
+    grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    /* width: 30vw;
+    height: 60vh; */
+    /* background: #090979; */
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 10px #0808d9; */
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+.Cal-btn {
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 38px;
+    cursor: pointer;
+}
+
+.Cal-btn:hover {
+    /* box-shadow: 0px 0px 10px #0808d9; */
+    box-shadow: 0px 0px 10px #6d08d9;
+    border-radius: 10px;
+    
+}
+
+.Cal-clear {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    /* grid-area: 1 / 1 / 2 / 2; */
+    /* background: #fff; */
+    width: 30vw;
+    height: 6vh;
+}
+
+.Cal-btn-clear {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 12px 38px;
+    cursor: pointer;
+}
+
+.Cal-btn-clear:hover{
+    box-shadow: 0px 0px 10px #c108e6;
+    border-radius: 10px;
+}
